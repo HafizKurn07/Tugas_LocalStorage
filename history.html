@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat BMR</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger fixed-top">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+            <form class="form-inline w-25">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon2">
+                    <button class="btn bg-white btn-round rounded-right"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="container-fluid p-5 bg-danger text-white text-center">
+        <div class="row">
+            <div class="col-md-4 d-none d-md-block">
+                <p class="h1 lh-1 text-start pt-5">Berbagi<br>Semangat Indonesia</p>
+                <p class="h5">www.aksiberbagi.com</p>
+            </div>
+            <div class="col-md-4">
+                <img src="bmr images.png" class="img-fluid rounded mx-auto d-block" alt="...">
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <p class="h1 lh-1 text-start pt-5">#Bergerak <br><span class="h3">Untuk Indonesia</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Riwayat BMR -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-4 mx-auto p-0">
+                <div class="bg-danger text-white text-center p-4 rounded-top ">
+                    <h3>Riwayat Perhitungan BMR</h3>
+                </div>
+                <div class="card shadow-lg p-4">
+                    <input type="text" class="form-control mb-3" id="searchInput" placeholder="Search by name" aria-describedby="basic-addon2">
+
+                    <table class="table-responsive table-hover table-bordered table-striped text-center table-sm mt-4">
+                        <thead class="thead-light">
+                            <tr class="bg-danger text-white">
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Gender</th>
+                                <th>Weight (Kg)</th>
+                                <th>Height (Cm)</th>
+                                <th>Age</th>
+                                <th>BMR</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historyTable">
+                            <!-- Data dari localStorage akan ditambahkan di sini -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bg-danger text-white text-center p-2">
+                    <small>Copyright &copy 2024 Hafiz Kurniawan</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Footer Navigation -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 mx-auto p-0 fixed-bottom">
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid justify-content-around">
+                        <a class="navbar-brand text-center" href="index.html">
+                            <i class="fas fa-home"></i><br><small>Beranda</small>
+                        </a>
+                        <a class="navbar-brand text-center" href="history.html">
+                            <i class="fas fa-history"></i><br><small>History</small>
+                        </a>
+                        <a class="navbar-brand text-center" href="#">
+                            <i class="fas fa-file-alt"></i><br><small>Halaman</small>
+                        </a>
+                        <a class="navbar-brand text-center" href="#">
+                            <i class="fas fa-user-circle"></i><br><small>Profil</small>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery and Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="history.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMR Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger fixed-top">
+        <div class="container-fluid justify-content-center">
+          <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <form class="form-inline w-25">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon2">
+                <button class="btn bg-white btn-round rounded-right"><i class="fas fa-search"></i></button>
+              </div>
+          </form>
+        </div>
+    </nav>     
+
+      <div class="container-fluid p-5 bg-danger text-white text-center">
+        <div class="row">
+            <div class="col-md-4 d-none d-md-block">
+                <div class="justify-content-center ">
+                    <p class="h1 lh-1 text-start pt-5">Berbagi<br>
+                        Semangat Indonesia
+                    </p>
+                    <p class="h5">www.aksiberbagi.com</p>   
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="bmr images.png" class="img-fluid rounded mx-auto d-block" alt="...">
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <div class="d-flex justify-content-center align-items-center ">
+                    <p class="h1 lh-1 text-start pt-5">#Bergerak <br>
+                        <span class="h3">Untuk Indonesia</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 mx-auto p-0">
+                <div class="card">
+                    <div class="card-body bg-info">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-grid">
+                                <button class="btn btn-success">Cek Kalori harian</button>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-warning text-white">Ayo Cek Segera</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-4 mx-auto p-0">
+            <div class="bg-danger text-white text-center p-4">
+                <h3>BMR Calculator</h3>
+            </div>
+            <div class="card p-4">
+                <form id="bmrForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" class="form-control" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="weight">Weight (Kg):</label>
+                        <input type="number" id="weight" class="form-control" placeholder="Enter your weight" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Height (Cm):</label>
+                        <input type="number" id="height" class="form-control" placeholder="Enter your height" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age (Years):</label>
+                        <input type="number" id="age" class="form-control" placeholder="Enter your age" required>
+                    </div>
+                    
+                    <button type="button" id="calculateBtn" class="btn btn-danger btn-block">Calculate BMR</button>
+                </form>
+                
+                <div id="result" class="result hidden text-center mt-4">
+                    <h5>Your BMR is: <span id="bmrValue"></span> calories/day</h5>
+                </div>
+
+            </div>
+            <div class="bg-danger text-white text-center p-2">
+                <small>Copyright &copy 2024 Hafiz Kurniawan</small>
+            </div>
+            </div> 
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 mx-auto p-0 fixed-bottom">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container-fluid justify-content-around ">
+                          <a class="navbar-brand text-center" href="#">
+                            <i class="fas fa-home"></i><br>
+                            <small>Beranda</small>
+                          </a>
+                          <a class="navbar-brand text-center" href="history.html">
+                            <i class="fas fa-history"></i><br>
+                            <small>History</small>
+                          </a>
+                          <a class="navbar-brand text-center" href="#">
+                            <i class="fas fa-file-alt"></i><br>
+                            <small>Halaman</small>
+                          </a>
+                          <a class="navbar-brand text-center" href="#">
+                            <i class="fas fa-user-circle"></i><br>
+                            <small>Profil</small>
+                          </a>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+        
+
+      <script src="script.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>
